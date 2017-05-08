@@ -1,0 +1,200 @@
+body,html {
+
+  background-color: white;
+  height: 100%;
+   -webkit-transform: translate3d(0, 0, 0);
+}
+
+
+
+header {
+    background-image: url("img/background.svg");
+     height: 100%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+
+
+}
+
+.heading {
+
+position: relative;
+  width: 100%;
+  background-size: cover;
+  background: linear-gradient(
+                     rgba(255,255,255, 0),
+                     rgba(255,255,255, 1)),
+                     url("img/background.svg");
+
+
+
+
+background-size: cover;
+background-attachment: fixed;
+position: relative;}
+
+
+.section-2 {
+
+
+  background: linear-gradient(
+                     rgba(255,255,255, 0.0),
+                     rgba(255,255,255, 0.0)),
+                     url("img/background.svg");
+                     background-position: center;
+                     background-size: auto 100%;
+
+
+
+
+}
+
+
+.section-1 {
+
+
+}
+
+#background{
+
+
+  padding-top: 200px;
+  padding-bottom : 200px;
+  margin-top: -200px;
+  margin-bottom: -200px;
+  background: linear-gradient(
+                     rgba(255,255,255, .7),
+                     rgba(255,255,255, .9)),
+                     url("img/prog.jpeg");
+  background-size: cover;
+  background-attachmen
+
+
+
+}
+
+h1 {
+  margin: 0;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5  0px ;
+  color:  #5C5C5C  ;
+
+
+
+
+
+}
+
+h1.header {
+  -webkit-animation-iteration-count: 1;
+  font-family: 'Roboto', sans-serif;
+      color: #5C5C5C ;
+      font-size: 9.5em;
+      font-weight: 100;
+      -webkit-font-smoothing: antialiased;
+      	-moz-osx-font-smoothing: grayscale;
+        letter-spacing: -13px;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: -1.2em;
+
+
+
+}
+
+p {
+
+font-family: 'Roboto Condensed', sans-serif;
+    color: #5C5C5C  ;
+    font-size: 21px;
+    font-weight: 300;
+
+}
+
+img#logo{
+  max-width: 100%;
+      height: auto;
+      width: auto;
+      position: relative;
+     top: 50%;
+     transform: translateY(+50%);
+}
+
+img.iphone{
+
+    max-height: 100%px;
+      width: 110%;
+      position: relative;
+      z-index: 1;
+
+
+
+}
+
+.preview {
+  width: 88%;
+  height: 75%;
+  z-index: 2;
+  position: absolute;
+  top: 10%;
+  left: 11%;
+  background-image: 100%;
+
+}
+
+
+
+
+.parent {
+  width: 100%;
+    position: static;
+    -webkit-overflow-scrolling: touch;
+-webkit-transform: translateZ(0px);
+-webkit-transform: translate3d(0,0,0);
+-webkit-perspective: 1000;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  margin-left: -5%;
+  margin-right: -5%;
+
+}
+
+.vCentre
+{
+  position: relative;
+top: 50%;
+transform: 			translateY(-50%)}
+
+.once{
+
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.photo {
+position: center;
+
+
+
+}
+.contain-image{
+  margin-right:
+  overflow-x: hidden;
+  height: 13em;
+  position: relative;
+
+
+}

@@ -21,8 +21,8 @@ width: 100%;
 height: auto;
 background-image: url("img/iconbg.svg");
 background-repeat: repeat;
-padding-bottom: 4em;
-padding-top: 4em;
+padding-bottom: 2em;
+padding-top: 2em;
 
 
 }
@@ -49,6 +49,17 @@ padding-top: 4em;
 
 }
 
+.section-4{
+display: inline-block;
+height: auto;
+width: 100%;
+height: 100%;
+padding-bottom: 4em;
+padding-top: 4em;
+
+
+}
+
 .background-blue{
   background-color: #5BC3EB;
 }
@@ -60,13 +71,17 @@ padding-top: 4em;
 }
 
 .regular-image{
-  width: 100%;
+  width: 180px;
   min-height: 200px;
   height: inherit;
   overflow-y: hidden;
   padding: 0em;
   margin: 0.5em;
   margin-top: 0em;
+  float: left;
+  border-style: solid;
+   border-color: rgba(255,255,255,0.55);
+   border-width: 5px;
 }
 
 h1 {
@@ -92,6 +107,7 @@ col
 
 
 p {
+  margin: 0em;
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
   font-weight: 300;
@@ -166,6 +182,28 @@ padding-bottom: 0.25em;
 
   }
 
+  .exp{
+    padding-top: 1em;
+    margin: 0em;
+    padding-left: 2em;
+    margin-left: 2em;
+  border-left: thin solid #5BC3EB;
+  }
+
+  .point {
+    margin-top: 2em;
+    margin-left: -2.365em;
+     width: 10px;
+     height: 10px;
+     background:#5BC3EB;
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     border-radius: 70px;
+     float: left;
+     outline-offset: 15px;
+
+  }
+
   .fa.social {
     color: white;
     font-size: 1.8em;
@@ -173,6 +211,24 @@ padding-bottom: 0.25em;
     padding-top: .6em;
     padding-bottom: .6em;
   }
+
+  .fa.tech {
+
+      color: white;
+      font-size: 1.3em;
+      padding:0.2em;
+      padding-top: 0em;
+      padding-bottom: 0em;
+}
+
+.dev-logo-small{
+  display: inline-block;
+  color: white;
+  font-size: 1.3em;
+  padding:0.2em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
 
   .fa.social:hover{
     -webkit-animation: highlight .5s 0s 1 forwards alternate;
@@ -182,6 +238,12 @@ padding-bottom: 0.25em;
    animation: highlight .5s 0s 1 forwards alternate;
 
 
+}
+.line-height-small
+{
+  line-height: 1.6em;
+  padding: 0em;
+  margin: 0em;
 }
 
 .fa.logo-big {
@@ -246,6 +308,11 @@ margin: auto;
   padding-right: 4em;
   padding-bottom: : 0em;
 
+}
+
+.slider-nav{
+
+  padding-top: 2em;
 }
 
 .footer{
@@ -353,16 +420,36 @@ height: 12em;
 }
 
 .box{
-  background: white;
-  padding: 0em;
-  margin-bottom: 0em;
+  background: rgba(255,255,255,0.65);
+  padding: 0.5em;
+
+  margin-bottom: 3em;
   }
+
+  .box.see {
+
+    background: rgba(255,255,255,0.12);
+      padding-top:  2em;
+      height: 100%;
+    }
+
 
   .box.box-blue{
     background: #5BC3EB;
     margin-top: -0em;
-
   }
+
+  .box.quote{
+    padding: 1em;
+
+    margin: 1em;
+    }
+
+  hr.vertical {
+    height:100%; //you might need some positioning for this to work, see other questions about 100% height
+    width:0;
+    border:1px solid white;
+}
 
   .left{
     background: white;
@@ -382,6 +469,12 @@ height: 12em;
   width: 100%;
   padding: 0;
 margin:0;
+}
+
+img.portfolio{
+width: 100%;
+height: auto;
+
 }
 
 

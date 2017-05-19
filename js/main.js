@@ -54,5 +54,4 @@ $('.slider-nav').slick({
  dots: false,
  centerMode: true,
  focusOnSelect: true,
- arrows: true,
 });

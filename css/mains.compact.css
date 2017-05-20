@@ -30,9 +30,9 @@ img.portrait-small { width: 64px; height: 64px; border-style: solid; border-colo
 
 p { margin: 0em; font-family: 'Open Sans', sans-serif; color: white; font-weight: 300; font-size: 1.1em; border: #474747 1px 1px 1px; }
 
-h2.heading { color: white; margin: 0px; font-size: 1.25em; }
+h2.heading { color: white; margin: 0px; font-size: 20px; }
 
-h1.heading { font-size: 5.2em; font-weight: 100; text-align: center; letter-spacing: -4px; margin: 0px; color: white; -webkit-animation: bounceInDown .9s .0s 1 forwards alternate; -moz-animation: bounceInDown .9s .0s 1 forwards alternate; -ms-animation: bounceInDown .9s .0s 1 forwards alternate; -o-animation: bounceInDown .9s .0s 1 forwards alternate; animation: bounceInDown .9s .0s 1 forwards alternate; background: white; -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 200px; }
+h1.heading { font-size: 80px; font-weight: 100; text-align: center; letter-spacing: -4px; margin: 0px; color: white; -webkit-animation: bounceInDown .9s .0s 1 forwards alternate; -moz-animation: bounceInDown .9s .0s 1 forwards alternate; -ms-animation: bounceInDown .9s .0s 1 forwards alternate; -o-animation: bounceInDown .9s .0s 1 forwards alternate; animation: bounceInDown .9s .0s 1 forwards alternate; background: white; -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 200px; }
 
 h2.logo-text { font-family: 'Roboto', sans-serif; font-size: 2em; font-weight: 300; color: white; margin: 0em; text-align: center; padding-top: 0.25em; }
 
@@ -136,8 +136,11 @@ img.portfolio { width: 100%; height: auto; }
 .about { padding-left: 2em; padding-right: 2em; }
 
 /* Small devices (tablets, 768px and up) col- sm-x*/
-@media (min-width: 768px) { h2.heading { color: white; margin: 0px; font-size: 2em; }
-  h1.heading { font-size: 7em; letter-spacing: -4px; margin: 0px; line-height: 200px; } }
+@media (min-width: 768px) { h2.heading { font-size: 20px; }
+  h1.heading { font-size: 100px; } }
 
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 922px) { h2.heading { font-size: 30px; }
+  h1.heading { font-size: 130px; } }
+
 /* Large devices (large desktops, 1200px and up) */

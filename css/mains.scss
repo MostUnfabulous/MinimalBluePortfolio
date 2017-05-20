@@ -59,10 +59,10 @@ padding-bottom: 4em;
 padding-top: 4em;
 
 background: $primary-color; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #5BC3EB, #96D8F2); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #5BC3EB, #96D8F2); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #5BC3EB, #96D8F2); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #5BC3EB, #96D8F2); /* Standard syntax */
+  background: -webkit-linear-gradient(left top, $primary-color, #96D8F2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, $primary-color, #96D8F2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, $primary-color, #96D8F2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, $primary-color, #96D8F2); /* Standard syntax */
 
 
 }
@@ -72,13 +72,13 @@ background: $primary-color; /* For browsers that do not support gradients */
 }
 
 .about-text{
-  color: #5BC3EB;
+  color: $primary-color;
   font-weight: 400;
   font-size: 1.3em;
 }
 
 ul{
-  color: #5BC3EB;
+  color: $primary-color;
   font-weight: 400;
   font-size: 1.1em;
   font-family: 'Open Sans', sans-serif;
@@ -86,21 +86,21 @@ ul{
 }
 
 h4.exp-title{
-  color: #5BC3EB;
+  color: $primary-color;
   font-weight: 300;
   font-size: 1.5em;
 
 }
 
 .exp-text{
-  color: #5BC3EB;
+  color: $primary-color;
   font-weight: 400;
   font-size: 1.1em;
 }
 
 p.quote{
     border-left: 4px solid white;
-    color: #5BC3EB;
+    color: $primary-color;
     font-weight: 400;
     font-size: 1.1em;
 }
@@ -161,11 +161,11 @@ p {
 h2.heading{
   color: white;
   margin: 0px;
-font-size: 1.25em;
+font-size: 20px;
 }
 
 h1.heading {
-  font-size: 5.2em;
+  font-size: 80px;
   font-weight: 100;
   text-align: center;
   letter-spacing: -4px;
@@ -230,7 +230,7 @@ padding-bottom: 0.25em;
     margin: 0em;
     padding-left: 2em;
     margin-left: 2em;
-  border-left: thin solid #5BC3EB;
+  border-left: thin solid $primary-color;
   }
 
   .point {
@@ -238,7 +238,7 @@ padding-bottom: 0.25em;
     margin-left: -2.365em;
      width: 10px;
      height: 10px;
-     background:#5BC3EB;
+     background:$primary-color;
      -moz-border-radius: 5px;
      -webkit-border-radius: 5px;
      border-radius: 70px;
@@ -479,7 +479,7 @@ height: 12em;
 
 
   .box.box-blue{
-    background: #5BC3EB;
+    background: $primary-color;
     margin-top: -0em;
   }
 
@@ -534,23 +534,28 @@ height: auto;
 @media (min-width: 768px) {
 
 h2.heading{
-  color: white;
-  margin: 0px;
-font-size: 2em;
+font-size: 20px
 }
 
 h1.heading {
-  font-size: 7em;
-  letter-spacing: -4px;
-  margin: 0px;
-   line-height: 200px;
+font-size: 100px;
 
 }
 
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 922px) {}
+@media (min-width: 922px) {
+
+  h2.heading{
+    font-size: 30px
+  }
+
+  h1.heading {
+    font-size: 130px;
+
+  }
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}

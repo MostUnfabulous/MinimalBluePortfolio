@@ -2,7 +2,7 @@ body, html { height: 100%; width: 100%; background-color: #5BC3EB; }
 
 .heading { height: 100%; width: 100%; display: inline-block; }
 
-.section-1 { display: inline-block; height: auto; width: 100%; height: auto; background-image: url("img/iconbg.svg"); background-repeat: repeat; padding-bottom: 2em; padding-top: 2em; }
+.section-1 { padding: 0em; display: inline-block; height: auto; width: 100%; height: auto; background-image: url("img/iconbg.svg"); background-repeat: repeat; padding-bottom: 2em; padding-top: 2em; overflow-x: hidden; }
 
 .section-2 { display: inline-block; height: auto; width: 100%; background-color: white; }
 
@@ -12,7 +12,7 @@ body, html { height: 100%; width: 100%; background-color: #5BC3EB; }
 
 .background-blue { background-color: #5BC3EB; }
 
-.about-text { color: #5BC3EB; font-weight: 400; font-size: 1.3em; }
+p.about-text { color: #5BC3EB; font-weight: 400; font-size: 25px; padding: 15px; }
 
 ul { color: #5BC3EB; font-weight: 400; font-size: 1.1em; font-family: 'Open Sans', sans-serif; }
 
@@ -141,6 +141,7 @@ img.portfolio { width: 100%; height: auto; }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 922px) { h2.heading { font-size: 30px; }
-  h1.heading { font-size: 130px; } }
+  h1.heading { font-size: 130px; }
+  p.about-text { font-size: 20px; } }
 
 /* Large devices (large desktops, 1200px and up) */

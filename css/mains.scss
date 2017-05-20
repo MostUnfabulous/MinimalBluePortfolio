@@ -17,6 +17,7 @@ display: inline-block;
 }
 
 .section-1{
+  padding:0em;
 display: inline-block;
 height: auto;
 width: 100%;
@@ -25,6 +26,7 @@ background-image: url("img/iconbg.svg");
 background-repeat: repeat;
 padding-bottom: 2em;
 padding-top: 2em;
+overflow-x: hidden;
 
 
 }
@@ -71,10 +73,11 @@ background: $primary-color; /* For browsers that do not support gradients */
   background-color: $primary-color;
 }
 
-.about-text{
+p.about-text{
   color: $primary-color;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 25px;
+  padding: 15px;
 }
 
 ul{
@@ -525,8 +528,8 @@ height: auto;
 
   .about{
 
-    padding-left : 2em;
-    padding-right : 2em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
 
@@ -534,7 +537,7 @@ height: auto;
 @media (min-width: 768px) {
 
 h2.heading{
-font-size: 20px
+font-size: 20px;
 }
 
 h1.heading {
@@ -548,13 +551,17 @@ font-size: 100px;
 @media (min-width: 922px) {
 
   h2.heading{
-    font-size: 30px
+    font-size: 30px;
   }
 
   h1.heading {
     font-size: 130px;
 
   }
+
+  p.about-text{
+    font-size:20px;
+}
 }
 
 /* Large devices (large desktops, 1200px and up) */

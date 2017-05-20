@@ -56,6 +56,12 @@ width: 100%;;
 padding-bottom: 4em;
 padding-top: 4em;
 
+background: #5BC3EB; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #5BC3EB, #96D8F2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #5BC3EB, #96D8F2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #5BC3EB, #96D8F2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #5BC3EB, #96D8F2); /* Standard syntax */
+
 
 }
 
@@ -90,6 +96,13 @@ h4.exp-title{
   font-size: 1.1em;
 }
 
+p.quote{
+    border-left: 4px solid white;
+    color: #5BC3EB;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
 
 .regular-image{
   width: 180px;
@@ -117,12 +130,19 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 font-size: 5  0px ;
-col
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
  line-height: 100px;
 }
 
+img.portrait-small{
+  width: 64px;
+  height: 64px;
+  border-style: solid;
+  border-color: rgba(255,255,255,0.55);
+  border-width: 3px;
+    float: left;
+}
 
 
 
@@ -131,19 +151,19 @@ p {
   margin: 0em;
   font-family: 'Open Sans', sans-serif;
   color: white;
-  font-weight: 400;
-  font-size: 1.2em;
+  font-weight: 300;
+  font-size: 1.1em;
   border: rgb(71, 71, 71) 1px 1px 1px);
 }
 
 h2.heading{
   color: white;
   margin: 0px;
-font-size: 2em;
+font-size: 1.25em;
 }
 
 h1.heading {
-  font-size: 7em;
+  font-size: 5.2em;
   font-weight: 100;
   text-align: center;
   letter-spacing: -4px;
@@ -327,13 +347,13 @@ margin: auto;
   height: auto;
   float:left; /* add this */
   padding-right: 4em;
-  padding-bottom: : 0em;
+  padding-bottom:  0em;
 
 }
 
 .slider-nav{
 
-  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .footer{
@@ -451,6 +471,7 @@ height: 12em;
 
     background: rgba(255,255,255,0.12);
       padding-top:  2em;
+      padding-bottom:  2em;
       height: 100%;
     }
 
@@ -461,8 +482,7 @@ height: 12em;
   }
 
   .box.quote{
-    padding: 1em;
-
+    padding: 0.3em;
     margin: 1em;
     }
 
@@ -506,3 +526,29 @@ height: auto;
     padding-left : 2em;
     padding-right : 2em;
   }
+
+
+  /* Small devices (tablets, 768px and up) col- sm-x*/
+@media (min-width: 768px) {
+
+h2.heading{
+  color: white;
+  margin: 0px;
+font-size: 2em;
+}
+
+h1.heading {
+  font-size: 7em;
+  letter-spacing: -4px;
+  margin: 0px;
+   line-height: 200px;
+
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }

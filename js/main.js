@@ -48,10 +48,10 @@ $('.slider-for').slick({
 });
 
 $('.slider-nav').slick({
- slidesToShow: 3,
+ slidesToShow: 4,
  slidesToScroll: 1,
  asNavFor: '.slider-for',
  dots: false,
- centerMode: true,
+ centerMode: false,
  focusOnSelect: true,
 });

@@ -48,19 +48,26 @@ html {
     background-image: url("img/iconbg.svg");
     background-repeat: repeat;
 
-    & p{
+    & p {
       color: $secondary-color;
       font-weight: 400;
       font-size: 18px;
       padding: 8px;
     }
 
-
-    & h4{
+    & h4 {
       color: $primary-color;
       font-weight: 300;
       font-size: 25px;
+    }
 
+    & img.portrait-small {
+      width: 64px;
+      height: 64px;
+      border-style: solid;
+      border-color: rgba(255,255,255,0.55);
+      border-width: 3px;
+      float: left;
     }
   }
 
@@ -75,19 +82,46 @@ html {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom right, $primary-color, #96D8F2);
 
-    & ul {
+    ul {
       color: $primary-color;
       font-weight: 200;
       font-size: 1.1em;
       font-family: 'Open Sans', sans-serif;
     }
-    /* Standard syntax */
+
+    h4 {
+      color: $primary-color;
+      font-weight: 400;
+      font-size: 1.5em;
+    }
+    p {
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 1.1em;
+
   }
+}
 
   &.portfolio {
-    height: 100%;
     background-image: url("img/iconbg.svg");
     background-repeat: repeat;
+    min-height: 100%;
+
+    &.project {
+      width: auto;
+      height: auto;
+      float: left;
+      /* add this */
+      padding-right: 4em;
+      padding-bottom: 0;
+    }
+
+    & img.logo{
+      width: 160px;
+      height: auto;
+  margin: auto;
+  padding-bottom: 2em;
+    }
   }
 }
 
@@ -102,31 +136,14 @@ html {
     background: rgba(255,255,255,0.15);
   }
 
-  &.quote
-  {
-
-    & p{
+  &.quote {
+    & p {
       color: $primary-color;
       font-weight: 400;
       font-size: 1.1em;
-        border-left: 6px solid $primary-color;
+      border-left: 6px solid $primary-color;
     }
   }
-}
-
-
-
-
-h4.exp-title {
-  color: $primary-color;
-  font-weight: 300;
-  font-size: 1.5em;
-}
-
-.exp-text {
-  color: $primary-color;
-  font-weight: 400;
-  font-size: 1.1em;
 }
 
 
@@ -159,14 +176,6 @@ h1 {
   line-height: 100px;
 }
 
-img.portrait-small {
-  width: 64px;
-  height: 64px;
-  border-style: solid;
-  border-color: rgba(255,255,255,0.55);
-  border-width: 3px;
-  float: left;
-}
 
 p {
   margin: 0;
@@ -250,27 +259,6 @@ h2.title {
   padding: 0 0.2em;
 }
 
-.dev-logo-small {
-  display: inline-block;
-  color: $secondary-color;
-  font-size: 1.3em;
-  padding: 0 0.2em;
-}
-
-.fa.social:hover {
-  -webkit-animation: highlight 0.5s 0s 1 forwards alternate;
-  -moz-animation: highlight 0.5s 0s 1 forwards alternate;
-  -ms-animation: highlight 0.5s 0s 1 forwards alternate;
-  -o-animation: highlight 0.5s 0s 1 forwards alternate;
-  animation: highlight 0.5s 0s 1 forwards alternate;
-}
-
-.line-height-small {
-  line-height: 1.6em;
-  padding: 0;
-  margin: 0;
-}
-
 .fa.logo-big {
   display: inline-block;
   width: 100%;
@@ -293,9 +281,28 @@ h2.title {
   text-align: center;
 }
 
-.text-white {
+.dev-logo-small {
+  display: inline-block;
   color: $secondary-color;
+  font-size: 1.3em;
+  padding: 0 0.2em;
 }
+
+.fa.social:hover {
+  -webkit-animation: highlight 0.5s 0s 1 forwards alternate;
+  -moz-animation: highlight 0.5s 0s 1 forwards alternate;
+  -ms-animation: highlight 0.5s 0s 1 forwards alternate;
+  -o-animation: highlight 0.5s 0s 1 forwards alternate;
+  animation: highlight 0.5s 0s 1 forwards alternate;
+}
+
+.line-height-small {
+  line-height: 1.6em;
+  padding: 0;
+  margin: 0;
+}
+
+
 
 .about-image {
   width: 100%;
@@ -306,31 +313,6 @@ h2.title {
   margin: 0;
 }
 
-.about-image-container {
-  width: 100%;
-  height: 13em;
-  min-height: 200px;
-  overflow-y: hidden;
-  color: rgba(255, 0, 0, 0.9);
-}
-
-.icon-container {
-  width: auto;
-  height: auto;
-  float: left;
-  /* add this */
-  padding-right: 4em;
-  padding-bottom: 0;
-}
-
-.project-container {
-  width: auto;
-  height: auto;
-  float: left;
-  /* add this */
-  padding-right: 4em;
-  padding-bottom: 0;
-}
 
 .slider-nav {
   padding-bottom: 1em;
@@ -440,41 +422,13 @@ img.thumb {
   animation-name: bounceInDown;
 }
 
-hr.vertical {
-  height: 100%; //you might need some positioning for this to work, see other questions about 100% height
-  width: 0;
-  border: 1px solid $secondary-color;
-}
-
-.left {
-  background: $secondary-color;
-  padding: 1em;
-}
-
-.no-padding {
-  padding: 0;
-  margin: 0;
-}
-
-.no-padding-full {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
 
 img.portfolio {
   width: 100%;
   height: auto;
 }
 
-.llll {
-  border: 1px solid #000;
-}
 
-.about-box {
-  padding-left: 2em;
-  padding-right: 2em;
-}
 /* Small devices (tablets, 768px and up) col- sm-x*/
 @media (min-width: 768px) {
   .heading {

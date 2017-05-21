@@ -60,6 +60,15 @@ html {
   font-size: 25px;
 }
 
+.section.about img.portrait-small {
+  width: 64px;
+  height: 64px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.55);
+  border-width: 3px;
+  float: left;
+}
+
 .section.experience {
   background: #5BC3EB;
   /* For browsers that do not support gradients */
@@ -70,7 +79,6 @@ html {
   background: -moz-linear-gradient(bottom right, #5BC3EB, #96D8F2);
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #5BC3EB, #96D8F2);
-  /* Standard syntax */
 }
 
 .section.experience ul {
@@ -80,10 +88,38 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+.section.experience h4 {
+  color: #5BC3EB;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.section.experience p {
+  color: #5BC3EB;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
 .section.portfolio {
-  height: 100%;
   background-image: url("img/iconbg.svg");
   background-repeat: repeat;
+  min-height: 100%;
+}
+
+.section.portfolio.project {
+  width: auto;
+  height: auto;
+  float: left;
+  /* add this */
+  padding-right: 4em;
+  padding-bottom: 0;
+}
+
+.section.portfolio img.logo {
+  width: 160px;
+  height: auto;
+  margin: auto;
+  padding-bottom: 2em;
 }
 
 .box {
@@ -103,18 +139,6 @@ html {
   font-weight: 400;
   font-size: 1.1em;
   border-left: 6px solid #5BC3EB;
-}
-
-h4.exp-title {
-  color: #5BC3EB;
-  font-weight: 300;
-  font-size: 1.5em;
-}
-
-.exp-text {
-  color: #5BC3EB;
-  font-weight: 400;
-  font-size: 1.1em;
 }
 
 .regular-image {
@@ -144,15 +168,6 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 100px;
-}
-
-img.portrait-small {
-  width: 64px;
-  height: 64px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.55);
-  border-width: 3px;
-  float: left;
 }
 
 p {
@@ -237,27 +252,6 @@ h2.title {
   padding: 0 0.2em;
 }
 
-.dev-logo-small {
-  display: inline-block;
-  color: #eeeeee;
-  font-size: 1.3em;
-  padding: 0 0.2em;
-}
-
-.fa.social:hover {
-  -webkit-animation: highlight 0.5s 0s 1 forwards alternate;
-  -moz-animation: highlight 0.5s 0s 1 forwards alternate;
-  -ms-animation: highlight 0.5s 0s 1 forwards alternate;
-  -o-animation: highlight 0.5s 0s 1 forwards alternate;
-  animation: highlight 0.5s 0s 1 forwards alternate;
-}
-
-.line-height-small {
-  line-height: 1.6em;
-  padding: 0;
-  margin: 0;
-}
-
 .fa.logo-big {
   display: inline-block;
   width: 100%;
@@ -280,8 +274,25 @@ h2.title {
   text-align: center;
 }
 
-.text-white {
+.dev-logo-small {
+  display: inline-block;
   color: #eeeeee;
+  font-size: 1.3em;
+  padding: 0 0.2em;
+}
+
+.fa.social:hover {
+  -webkit-animation: highlight 0.5s 0s 1 forwards alternate;
+  -moz-animation: highlight 0.5s 0s 1 forwards alternate;
+  -ms-animation: highlight 0.5s 0s 1 forwards alternate;
+  -o-animation: highlight 0.5s 0s 1 forwards alternate;
+  animation: highlight 0.5s 0s 1 forwards alternate;
+}
+
+.line-height-small {
+  line-height: 1.6em;
+  padding: 0;
+  margin: 0;
 }
 
 .about-image {
@@ -291,32 +302,6 @@ h2.title {
   overflow-y: hidden;
   padding: 0;
   margin: 0;
-}
-
-.about-image-container {
-  width: 100%;
-  height: 13em;
-  min-height: 200px;
-  overflow-y: hidden;
-  color: rgba(255, 0, 0, 0.9);
-}
-
-.icon-container {
-  width: auto;
-  height: auto;
-  float: left;
-  /* add this */
-  padding-right: 4em;
-  padding-bottom: 0;
-}
-
-.project-container {
-  width: auto;
-  height: auto;
-  float: left;
-  /* add this */
-  padding-right: 4em;
-  padding-bottom: 0;
 }
 
 .slider-nav {
@@ -419,40 +404,9 @@ img.thumb {
   animation-name: bounceInDown;
 }
 
-hr.vertical {
-  height: 100%;
-  width: 0;
-  border: 1px solid #eeeeee;
-}
-
-.left {
-  background: #eeeeee;
-  padding: 1em;
-}
-
-.no-padding {
-  padding: 0;
-  margin: 0;
-}
-
-.no-padding-full {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
 img.portfolio {
   width: 100%;
   height: auto;
-}
-
-.llll {
-  border: 1px solid #000;
-}
-
-.about-box {
-  padding-left: 2em;
-  padding-right: 2em;
 }
 
 /* Small devices (tablets, 768px and up) col- sm-x*/

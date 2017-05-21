@@ -44,7 +44,7 @@ $('.slider-for').slick({
  slidesToScroll: 1,
  arrows: false,
  fade: true,
- asNavFor: '.slider-nav'
+ asNavFor: '.slider-nav',
 });
 
 $('.slider-nav').slick({
@@ -54,4 +54,19 @@ $('.slider-nav').slick({
  dots: false,
  centerMode: false,
  focusOnSelect: true,
+ responsive: [
+    {
+      breakpoint: 922,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint:647,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    }]
 });

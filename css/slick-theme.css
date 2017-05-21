@@ -87,8 +87,9 @@
     left: auto;
 }
 .slick-prev:before
-{
-    content: '←';
+{  content: "\f137";
+    font-family: 'FontAwesome';
+    font-size: 26px;
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +107,9 @@
 }
 .slick-next:before
 {
-    content: '→';
+  content: "\f138";
+      font-family: 'FontAwesome';
+      font-size: 26px;
 }
 [dir='rtl'] .slick-next:before
 {

@@ -1,5 +1,10 @@
 $primary-color: #5BC3EB;
 $secondary-color: #eeeeee;
+$bgDefault      : $primary-color;
+$bgHighlight    : $primary-color;
+$colDefault     : $secondary-color;
+$colHighlight   : $primary-color;
+$dropDown       : false;
 
 body,
 html {
@@ -11,6 +16,82 @@ html {
 
 }
 
+.navbar-fixed-top {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus {
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault;
+  }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        margin: 0em 0em 0em 0em;
+        padding-left:2em;
+        padding-right:2em;
+        &:hover,  &:focus {
+          color: $colHighlight;
+          background-color: $colDefault; }}
+      @if $dropDown {
+        > .dropdown-menu {
+          background-color: $bgDefault;
+          > li {
+            > a {
+              color: $colDefault;
+              &:hover,  &:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}
+            > .divider {
+              background-color: $bgHighlight;}}}}}
+    @if $dropDown {
+      .open .dropdown-menu > .active {
+        > a, > a:hover, > a:focus {
+          color: $colHighlight;
+          background-color: $bgHighlight; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-fixed-top .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+}
+
+
+
+a, a:hover, a:focus {
+    color: $secondary-color;
+    border: 0px;
+  text-decoration: none;
+}
 .heading {
   height: 100%;
   width: 100%;
@@ -45,7 +126,7 @@ html {
   overflow-x: hidden;
   width: 100%;
   height: auto;
-  padding-top: 2em;
+  padding-top: 4em;
   padding-bottom: 2em;
 
   &.about {
@@ -94,6 +175,11 @@ html {
       color: $primary-color;
       font-weight: 400;
       font-size: 1.1em;
+
+      &.tech{
+        color: $secondary-color;
+        padding: 10px;
+      }
     }
   }
 
@@ -116,6 +202,11 @@ html {
       padding-bottom: 2em;
     }
   }
+
+  &.contact{
+
+
+  }
 }
 
 .box {
@@ -127,6 +218,7 @@ html {
 
   &.clear-back {
     background: rgba(255,255,255,0.15);
+    border: 0px;
   }
 
   &.quote {
@@ -141,6 +233,24 @@ html {
     }
   }
 }
+
+.btn {
+  margin: 1em 0.3em 1em 0.3em;
+  -webkit-border-radius: 80;
+  -moz-border-radius: 80;
+  border-radius: 80px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  background: rgba(1, 1, 1, 0.0);
+  padding: 12px 45px 12px 45px;
+  border: solid #ffffff 1px;
+  text-decoration: none;
+
+ &:hover {
+  background: rgba(255, 255, 255, 0.2);
+
+}}
 
 .regular-image {
   width: 180px;

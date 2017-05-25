@@ -7,6 +7,89 @@ html {
   background-attachment: fixed;
 }
 
+.navbar-fixed-top {
+  background-color: #5BC3EB;
+  border-color: #5BC3EB;
+}
+
+.navbar-fixed-top .navbar-brand {
+  color: #eeeeee;
+}
+
+.navbar-fixed-top .navbar-brand:hover, .navbar-fixed-top .navbar-brand:focus {
+  color: #5BC3EB;
+}
+
+.navbar-fixed-top .navbar-text {
+  color: #eeeeee;
+}
+
+.navbar-fixed-top .navbar-nav > li > a {
+  color: #eeeeee;
+  margin: 0em 0em 0em 0em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.navbar-fixed-top .navbar-nav > li > a:hover, .navbar-fixed-top .navbar-nav > li > a:focus {
+  color: #5BC3EB;
+  background-color: #eeeeee;
+}
+
+.navbar-fixed-top .navbar-nav > .active > a, .navbar-fixed-top .navbar-nav > .active > a:hover, .navbar-fixed-top .navbar-nav > .active > a:focus {
+  color: #5BC3EB;
+  background-color: #5BC3EB;
+}
+
+.navbar-fixed-top .navbar-nav > .open > a, .navbar-fixed-top .navbar-nav > .open > a:hover, .navbar-fixed-top .navbar-nav > .open > a:focus {
+  color: #5BC3EB;
+  background-color: #5BC3EB;
+}
+
+.navbar-fixed-top .navbar-toggle {
+  border-color: #5BC3EB;
+}
+
+.navbar-fixed-top .navbar-toggle:hover, .navbar-fixed-top .navbar-toggle:focus {
+  background-color: #5BC3EB;
+}
+
+.navbar-fixed-top .navbar-toggle .icon-bar {
+  background-color: #eeeeee;
+}
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-top .navbar-form {
+  border-color: #eeeeee;
+}
+
+.navbar-fixed-top .navbar-link {
+  color: #eeeeee;
+}
+
+.navbar-fixed-top .navbar-link:hover {
+  color: #5BC3EB;
+}
+
+@media (max-width: 767px) {
+  .navbar-fixed-top .navbar-nav .open .dropdown-menu > li > a {
+    color: #eeeeee;
+  }
+  .navbar-fixed-top .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-fixed-top .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #5BC3EB;
+  }
+  .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a, .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-fixed-top .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #5BC3EB;
+    background-color: #5BC3EB;
+  }
+}
+
+a, a:hover, a:focus {
+  color: #eeeeee;
+  border: 0px;
+  text-decoration: none;
+}
+
 .heading {
   height: 100%;
   width: 100%;
@@ -41,7 +124,7 @@ html {
   overflow-x: hidden;
   width: 100%;
   height: auto;
-  padding-top: 2em;
+  padding-top: 4em;
   padding-bottom: 2em;
 }
 
@@ -90,6 +173,11 @@ html {
   font-size: 1.1em;
 }
 
+.section.experience p.tech {
+  color: #eeeeee;
+  padding: 10px;
+}
+
 .section.portfolio {
   min-height: 100%;
 }
@@ -120,6 +208,7 @@ html {
 
 .box.clear-back {
   background: rgba(255, 255, 255, 0.15);
+  border: 0px;
 }
 
 .box.quote p {
@@ -130,6 +219,24 @@ html {
   font-size: 1.1em;
   border-left: 6px solid #5BC3EB;
   font-style: italic;
+}
+
+.btn {
+  margin: 1em 0.3em 1em 0.3em;
+  -webkit-border-radius: 80;
+  -moz-border-radius: 80;
+  border-radius: 80px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  background: rgba(1, 1, 1, 0);
+  padding: 12px 45px 12px 45px;
+  border: solid #ffffff 1px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .regular-image {
